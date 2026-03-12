@@ -132,9 +132,9 @@ box-shadow:0 0 15px #00CC6A;
 }
 
 .foto img{
-width:550px;
+width:100%;
+max-width:550px;
 }
-
 /* SOBRE e SKILLS */
 
 .sobre-skill{
@@ -634,4 +634,92 @@ padding:6px 12px;
 border-radius:20px;
 cursor:pointer;
 margin-left:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1000px){
+
+.conteudo{
+flex-direction:column;
+text-align:center;
+}
+
+.texto h1{
+font-size:55px;
+}
+
+.foto img{
+max-width:350px;
+}
+
+.sobre-skill{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.texto-sobre{
+text-align:center;
+}
+
+.caixas2{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:700px){
+
+.topo{
+padding:20px;
+flex-direction:column;
+gap:15px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.sobre{
+padding:150px 30px;
+}
+
+.texto h1{
+font-size:42px;
+}
+
+.contato-container{
+grid-template-columns:1fr;
+}
+
+.footer-container{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.texto h1{
+font-size:34px;
+}
+
+.projetos h1,
+.contato h1{
+font-size:28px;
+}
+
+.contato{
+padding:80px 20px;
+}
+
+.projetos{
+padding:80px 20px;
+}
+
 }
